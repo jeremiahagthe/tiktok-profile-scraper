@@ -7,7 +7,7 @@
       "title": "TikTok cookie string (optional)",
       "type": "string",
       "description": "Paste a valid TikTok cookie string to improve access and stability.",
-      "default": ""
+      "editor": "password"
     },
     "keywords": {
       "title": "Keywords or Hashtags",
