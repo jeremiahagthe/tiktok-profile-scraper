@@ -1,0 +1,15 @@
+{
+  "keywords": ["#makeup", "vegan skincare"],
+  "country": "",
+  "minFollowerCount": 1000,
+  "maxFollowerCount": 500000,
+  "bioContains": ["vegan", "skincare"],
+  "emailRequired": false,
+  "verifiedOnly": false,
+  "maxProfiles": 50,
+  "maxPostsPerProfile": 8,
+  "engagementRateMin": 0.01,
+  "sortBy": "followers_desc",
+  "outputFormat": "json"
+}
+

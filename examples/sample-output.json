@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "generatedAt": "2025-01-01T00:00:00.000Z",
+    "count": 2,
+    "format": "json",
+    "version": "0.0.1"
+  },
+  "profiles": [
+    {
+      "username": "@creator1",
+      "profileUrl": "https://www.tiktok.com/@creator1",
+      "followerCount": 123456,
+      "bio": "Vegan skincare tips",
+      "verified": false,
+      "email": "creator1@example.com",
+      "posts": [
+        { "id": "123", "url": "https://www.tiktok.com/@creator1/video/123", "likes": 1200, "comments": 45, "shares": 10, "views": 10000 }
+      ],
+      "engagement": { "averageLikes": 1200, "averageComments": 45, "averageShares": 10, "averageViews": 10000, "engagementRate": 0.1255 }
+    },
+    {
+      "username": "@creator2",
+      "profileUrl": "https://www.tiktok.com/@creator2",
+      "followerCount": 98765,
+      "bio": "Makeup tutorials",
+      "verified": true,
+      "posts": [],
+      "engagement": { "averageLikes": 0, "averageComments": 0, "averageShares": 0, "averageViews": 0, "engagementRate": 0 }
+    }
+  ]
+}
+

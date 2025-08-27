@@ -1,0 +1,11 @@
+{
+  "name": "tiktok-influencer-scraper",
+  "version": "0.0.1",
+  "buildTag": "latest",
+  "env": {
+    "APIFY_MEMORY_MBYTES": 2048
+  },
+  "input": "./INPUT_SCHEMA.json",
+  "main": "dist/main.js"
+}
+

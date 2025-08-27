@@ -1,0 +1,105 @@
+{
+  "title": "TikTok Influencer Scraper Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "cookieString": {
+      "title": "TikTok cookie string (optional)",
+      "type": "string",
+      "description": "Paste a valid TikTok cookie string to improve access and stability.",
+      "default": ""
+    },
+    "keywords": {
+      "title": "Keywords or Hashtags",
+      "type": "array",
+      "description": "Keywords or hashtags to discover TikTok videos and related influencer accounts.",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "country": {
+      "title": "Country filter (optional)",
+      "type": "string",
+      "description": "Geographical filter for profiles if location data is available.",
+      "default": ""
+    },
+    "minFollowerCount": {
+      "title": "Minimum follower count",
+      "type": "integer",
+      "minimum": 0,
+      "default": 0
+    },
+    "maxFollowerCount": {
+      "title": "Maximum follower count (optional)",
+      "type": "integer",
+      "minimum": 0
+    },
+    "bioContains": {
+      "title": "Bio must contain (optional)",
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Keywords that must appear in influencer bio text.",
+      "default": []
+    },
+    "emailRequired": {
+      "title": "Email required",
+      "type": "boolean",
+      "description": "Only include profiles with public email addresses.",
+      "default": false
+    },
+    "verifiedOnly": {
+      "title": "Verified accounts only",
+      "type": "boolean",
+      "description": "Return only verified TikTok accounts.",
+      "default": false
+    },
+    "maxProfiles": {
+      "title": "Max profiles",
+      "type": "integer",
+      "minimum": 1,
+      "default": 100
+    },
+    "maxPostsPerProfile": {
+      "title": "Max posts per profile",
+      "type": "integer",
+      "minimum": 0,
+      "default": 10
+    },
+    "engagementRateMin": {
+      "title": "Minimum engagement rate (0-1)",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "minAverageLikes": {
+      "title": "Minimum average likes (optional)",
+      "type": "number",
+      "minimum": 0
+    },
+    "minAverageViews": {
+      "title": "Minimum average views (optional)",
+      "type": "number",
+      "minimum": 0
+    },
+    "sortBy": {
+      "title": "Sort by",
+      "type": "string",
+      "enum": ["followers_desc", "engagement_desc", "avg_likes_desc", "avg_views_desc"],
+      "default": "followers_desc"
+    },
+    "outputFormat": {
+      "title": "Output format",
+      "type": "string",
+      "enum": ["json", "csv"],
+      "default": "json"
+    }
+  },
+  "required": [
+    "keywords",
+    "minFollowerCount",
+    "maxProfiles",
+    "maxPostsPerProfile",
+    "outputFormat"
+  ],
+  "additionalProperties": false
+}
+
